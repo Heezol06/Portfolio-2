@@ -2,6 +2,7 @@ import React from 'react';
 import education from "../../asset/graduation-cap.png"
 import work from "../../asset/suitcase.png"
 import award from "../../asset/medal.png"
+import MultiCarousel from '../../MultiCarousel/MultiCarousel';
 
 const Resume = () => {
     return (
@@ -84,6 +85,8 @@ const Resume = () => {
                 <h1 className="bg-slate-800 px-4 py-3 mr-5 rounded-sm text-white">Management</h1>
             </div>
         </div>
+        {/* MultiCarousel */}
+        <MultiCarousel></MultiCarousel>
         </div>
         </div>
     );

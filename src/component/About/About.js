@@ -20,23 +20,11 @@ const About = () => {
           <div className="bg-purple-300 w-12 h-2"></div>
         </div>
       </div>
-      {/* <div className='grid lg:grid-cols-2'>
-                <div className=''>
-                <img className='rounded-2xl mx-auto' src="https://bostamireact.ibthemespro.com/static/media/about.01c11c889888a40123f4.jpg" alt="" />
-                </div>
-                <div className='ml-10'>
-                    <h1 className='text-3xl text-gray-50 mb-5'>About Me</h1>
-                    <p style={{fontFamily:"Poppins"}}>I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.</p>
-                    <p style={{fontFamily:"Poppins"}} className="my-5">My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.</p>
-                    <h1 className='text-3xl text-gray-50 mb-5'>Personal Info</h1>
-                </div>
-            </div> */}
-
       <div class="hero min-h-screen">
         <div class="hero-content flex-col lg:flex-row">
           <img
-            src="https://placeimg.com/260/400/arch"
-            class="rounded-lg shadow-2xl"
+            src="https://i.ibb.co/16hfqkg/123143440-183343230087043-2165664656976034618-n.jpg"
+            class="rounded-lg shadow-2xl w-96"
             alt=""
           />
           {/* about me  */}
@@ -45,8 +33,8 @@ const About = () => {
               Who am i?
             </h1>
             <p class="py-6" style={{ fontFamily: "Poppins" }}>
-              I'm Creative Director and UI/UX Designer from Sydney, Australia,
-              working in web development and print media. I enjoy turning
+              I'm Creative Director and UI/UX Designer from Bangladesh,
+              working in web development. I enjoy turning
               complex problems into simple, beautiful and intuitive designs.
               <br /> <br />
               My aim is to bring across your message and identity in the most
@@ -156,6 +144,8 @@ const About = () => {
                   </div>
                 </div>
       </div>
+      {/* Carousel  */}
+      
     </div>
   );
 };
