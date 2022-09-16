@@ -9,7 +9,7 @@ import download from "../../asset/down-arrow.png";
 const Home = () => {
   return (
     <div className="flex justify-center items-center my-10 flex-col leading-8">
-      <div className="flex justify-center items-center flex-col">
+      <div className="flex justify-center items-center flex-col px-1 lg:mx-auto ">
         <div className="w-56 h-56 rounded-full">
           <img
             className="rounded-full"
@@ -17,35 +17,79 @@ const Home = () => {
             alt=""
           />
         </div>
-        <h1 className="text-5xl font-bold mt-5 text-white">
+        <h1
+          className="text-5xl font-bold mt-5 text-white"
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="500"
+        >
           Shahriar Rahman Heezol
         </h1>
-        <p className="my-5 animate-bounce" style={{ fontFamily: "Poppins" }}>
-          MERN Stack Developer
+        <p className="my-5 text-center" style={{ fontFamily: "Poppins" }}>
+          <span
+            data-aos="fade-right"
+          >
+            I am Shahriar Rahman Heezol. And i am MERN Stack developer.
+          </span>
+          <br />
+          <span
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+          >
+            I have rich experience in both front end and back end development.
+          </span>
+          <br />
+          <span
+            data-aos="fade-up"
+            data-aos-duration="5000"
+            data-aos-anchor-placement="top-center"
+          >
+            I always try to be unique.
+          </span>
         </p>
       </div>
-      <div>
-        <a href="">
-          <button class="btn glass">
+      <div data-aos="zoom-in">
+        <a
+          href="https://m.facebook.com/heeZol.5"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button class="btn glass mx-1 lg:mx-2">
             <img className="w-10" src={facebook} alt="" srcset="" />
           </button>
         </a>
-        <button class="btn glass mx-2">
-          <img className="w-10" src={twiter} alt="" srcset="" />
-        </button>
-        <button class="btn glass mx-2">
-          <img className="w-10" src={git} alt="" srcset="" />
-        </button>
-        <button class="btn glass">
-          <img className="w-10" src={linkedin} alt="" srcset="" />
-        </button>
-        <button class="btn glass mx-2">
-          <img className="w-10" src={instagram} alt="" srcset="" />
-        </button>
+        <a href="https://twitter.com/SHeezol" target="_blank" rel="noreferrer">
+          <button class="btn glass mx-1 lg:mx-2">
+            <img className="w-10 sm:w-8" src={twiter} alt="" srcset="" />
+          </button>
+        </a>
+        <a href="" target="_blank" rel="noreferrer">
+          <button class="btn glass mx-1 lg:mx-2">
+            <img className="w-10 sm:w-8" src={git} alt="" srcset="" />
+          </button>
+        </a>
+        <a href="" target="_blank" rel="noreferrer">
+          <button class="btn glass mx-1 lg:mx-2">
+            <img className="w-10 sm:w-8" src={linkedin} alt="" srcset="" />
+          </button>
+        </a>
+        <a href="" target="_blank" rel="noreferrer">
+          <button class="btn glass mx-1 lg:mx-2">
+            <img className="w-10 sm:w-8" src={instagram} alt="" srcset="" />
+          </button>
+        </a>
       </div>
-      <button class="btn btn-active btn-accent my-5">
-        <img className="w-10" src={download} alt="" /> Download CV{" "}
-      </button>
+      <a
+        href="https://drive.google.com/file/d/1ag2QaJtCLt0oWPQazmUdvqEQ6KuV6kax/view?usp=sharing"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <button class="btn btn-active btn-accent my-5" data-aos="flip-down">
+          <img className="w-10 sm:w-8" src={download} alt="" /> Download CV{" "}
+        </button>
+      </a>
     </div>
   );
 };

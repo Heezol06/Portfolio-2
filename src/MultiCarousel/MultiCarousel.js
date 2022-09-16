@@ -46,7 +46,8 @@ const MultiCarousel = () => {
     };
 
     return (
-        <section className='lg:px-32 px-4 mt-44'>
+        <section className='lg:px-32 px-4 mt-44' data-aos="fade-up"
+        data-aos-duration="2000">
 
             <div>
             

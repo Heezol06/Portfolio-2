@@ -2,8 +2,8 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div>
-            <h1>blogs</h1>
+        <div className='h-screen'>
+            <h1 className='text-4xl text-white'>blogs</h1>
         </div>
     );
 };

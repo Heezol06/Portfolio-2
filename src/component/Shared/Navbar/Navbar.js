@@ -37,33 +37,57 @@ const Navbar = () => {
               tabindex="0"
               class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li className="flex items-center">
+               <Link to="/">
+              <li className="">
+                <button className="btn">
                 <AiOutlineHome/>
                 Home
+                </button>
               </li>
-              <li className="flex items-center">
-                <img src={about} className="h-10" alt="" />
+            </Link>
+            <Link to="/about">
+              <li className=" rounded mx-5 flex items-center tracking-wider">
+              <button className="btn">
+              <AiOutlineUser />
                 About
+                </button>
               </li>
-              <li className="flex items-center">
-                <img src={resume} className="h-10" alt="" />
-                Resume
+            </Link>
+            <Link to="/skillsEducation">
+              <li className=" rounded flex items-center tracking-wider">
+              <button className="btn">
+              <HiOutlineClipboardList />
+              Skills & Education
+                </button>
               </li>
-              <li className="flex items-center">
-                <img src={works} className="h-10" alt="" />
+            </Link>
+            <Link to="/works">
+              <li className=" rounded mx-5 flex items-center tracking-wider">
+              <button className="btn">
+              <AiOutlineCodeSandbox />
                 Works
+                </button>
               </li>
-              <li className="flex items-center">
-                <img src={blogs} className="h-10" alt="" />
+            </Link>
+            <Link to="/blogs">
+              <li className=" rounded flex items-center tracking-wider">
+              <button className="btn">
+                <FaBloggerB/>
                 Blogs
+                </button>
               </li>
-              <li className="flex items-center">
-                <img src={Contact} className="h-10" alt="" />
+            </Link>
+            <Link to="/contacts">
+              <li className=" rounded mx-5 flex items-center tracking-wider">
+              <button className="btn">
+                <AiOutlineContacts/>
                 Contact
+                </button>
               </li>
+            </Link>
             </ul>
           </div>
-          <h1 class="btn btn-ghost normal-case text-xl">
+          <h1 class="btn btn-ghost normal-case text-xl text-blue-300">
             <span style={{ fontFamily: "Pacifico" }}>H</span>eezo
             <span style={{ fontFamily: "Pacifico" }}>L</span>
           </h1>
@@ -86,11 +110,11 @@ const Navbar = () => {
                 </button>
               </li>
             </Link>
-            <Link to="/resume">
+            <Link to="/skillsEducation">
               <li className=" rounded flex items-center tracking-wider">
               <button className="btn">
               <HiOutlineClipboardList />
-                Resume
+              Skills & Education
                 </button>
               </li>
             </Link>
