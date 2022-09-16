@@ -5,8 +5,17 @@ import git from "../../asset/github.png";
 import linkedin from "../../asset/linkedin (1).png";
 import instagram from "../../asset/instagram.png";
 import download from "../../asset/down-arrow.png";
+import { Dna } from "react-loader-spinner";
 
 const Home = () => {
+  <Dna
+    visible={true}
+    height="80"
+    width="80"
+    ariaLabel="dna-loading"
+    wrapperStyle={{}}
+    wrapperClass="dna-wrapper"
+  />;
   return (
     <div className="flex justify-center items-center my-10 flex-col leading-8">
       <div className="flex justify-center items-center flex-col px-1 lg:mx-auto ">
@@ -18,7 +27,7 @@ const Home = () => {
           />
         </div>
         <h1
-          className="text-5xl font-bold mt-5 text-white"
+          className="text-4xl lg:text-5xl font-bold mt-5 text-white"
           data-aos="fade-left"
           data-aos-anchor="#example-anchor"
           data-aos-offset="500"
@@ -27,27 +36,20 @@ const Home = () => {
           Shahriar Rahman Heezol
         </h1>
         <p className="my-5 text-center" style={{ fontFamily: "Poppins" }}>
-          <span
-            data-aos="fade-right"
-          >
+          <span data-aos="fade-right">
             I am Shahriar Rahman Heezol. And i am MERN Stack developer.
           </span>
           <br />
           <span
-            data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-easing="ease-in-sine"
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="500"
           >
             I have rich experience in both front end and back end development.
           </span>
           <br />
-          <span
-            data-aos="fade-up"
-            data-aos-duration="5000"
-            data-aos-anchor-placement="top-center"
-          >
-            I always try to be unique.
-          </span>
+          <span>I always try to be unique.</span>
         </p>
       </div>
       <div data-aos="zoom-in">
@@ -57,27 +59,27 @@ const Home = () => {
           rel="noreferrer"
         >
           <button class="btn glass mx-1 lg:mx-2">
-            <img className="w-10" src={facebook} alt="" srcset="" />
+            <img className="w-8 lg:w-10" src={facebook} alt="" srcset="" />
           </button>
         </a>
         <a href="https://twitter.com/SHeezol" target="_blank" rel="noreferrer">
           <button class="btn glass mx-1 lg:mx-2">
-            <img className="w-10 sm:w-8" src={twiter} alt="" srcset="" />
+            <img className="w-8 lg:w-10" src={twiter} alt="" srcset="" />
           </button>
         </a>
-        <a href="" target="_blank" rel="noreferrer">
+        <a href="https://github.com/Heezol06" target="_blank" rel="noreferrer">
           <button class="btn glass mx-1 lg:mx-2">
-            <img className="w-10 sm:w-8" src={git} alt="" srcset="" />
+            <img className="w-8 lg:w-10" src={git} alt="" srcset="" />
           </button>
         </a>
-        <a href="" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/sr-heezol/" target="_blank" rel="noreferrer">
           <button class="btn glass mx-1 lg:mx-2">
-            <img className="w-10 sm:w-8" src={linkedin} alt="" srcset="" />
+            <img className="w-8 lg:w-10" src={linkedin} alt="" srcset="" />
           </button>
         </a>
-        <a href="" target="_blank" rel="noreferrer">
+        <a href="https://www.instagram.com/roy_jon_/" target="_blank" rel="noreferrer">
           <button class="btn glass mx-1 lg:mx-2">
-            <img className="w-10 sm:w-8" src={instagram} alt="" srcset="" />
+            <img className="w-8 lg:w-10" src={instagram} alt="" srcset="" />
           </button>
         </a>
       </div>

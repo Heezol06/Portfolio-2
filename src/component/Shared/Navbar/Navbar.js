@@ -87,7 +87,7 @@ const Navbar = () => {
             </Link>
             </ul>
           </div>
-          <h1 class="btn btn-ghost normal-case text-xl text-blue-300">
+          <h1 class="btn btn-ghost normal-case hidden lg:flex text-xl text-blue-300 ">
             <span style={{ fontFamily: "Pacifico" }}>H</span>eezo
             <span style={{ fontFamily: "Pacifico" }}>L</span>
           </h1>
@@ -144,6 +144,10 @@ const Navbar = () => {
             </Link>
           </ul>
         </div>
+          <h1 class="btn btn-ghost normal-case lg:hidden navbar-end text-xl text-blue-300 ">
+            <span style={{ fontFamily: "Pacifico" }}>H</span>eezo
+            <span style={{ fontFamily: "Pacifico" }}>L</span>
+          </h1>
       </div>
     </div>
   );
