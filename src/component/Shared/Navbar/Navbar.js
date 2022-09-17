@@ -1,11 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import imgHome from "../../../asset/home.png";
-import about from "../../../asset/user.png";
-import resume from "../../../asset/curriculum.png";
-import works from "../../../asset/role-playing.png";
-import blogs from "../../../asset/bold.png";
-import Contact from "../../../asset/contact.png";
 import {AiOutlineCodeSandbox , AiOutlineHome,AiOutlineContacts, AiOutlineUser } from 'react-icons/ai';
 import { HiOutlineClipboardList } from 'react-icons/hi';
 import { FaBloggerB } from 'react-icons/fa';
@@ -87,7 +81,7 @@ const Navbar = () => {
             </Link>
             </ul>
           </div>
-          <h1 class="btn btn-ghost normal-case hidden lg:flex text-xl text-blue-300 ">
+          <h1 class="btn btn-ghost normal-case hidden lg:flex text-2xl text-blue-300 ">
             <span style={{ fontFamily: "Pacifico" }}>H</span>eezo
             <span style={{ fontFamily: "Pacifico" }}>L</span>
           </h1>

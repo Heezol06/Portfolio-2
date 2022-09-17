@@ -18,36 +18,65 @@ import RoyalEnfield from "./component/Works/ReactProject/RoyalEnfield/RoyalEnfie
 import Nest from "./component/Works/TeamProject/Nest/Nest";
 import BrainSkill from "./component/Works/TeamProject/BrainSkill/BrainSkill";
 import Blogs from "./component/Blogs/Blogs";
+import { useEffect, useState } from "react";
+import { Dna } from "react-loader-spinner";
 
 function App() {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
   return (
-    <div
-      className="App bg-no-repeat bg-fixed bg-cover"
-      style={{ backgroundImage: `url(${bg})` }}
-    >
-      <BrowserRouter>
-        <Navbar></Navbar>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/skillsEducation" element={<SkillsEducations />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="/apartmentSeller" element={<ApartmentSeller />} />
-          <Route path="/travelDestination" element={<TravelDestination />} />
-          <Route path="/royalEnfield" element={<RoyalEnfield />} />
-          <Route path="/nest" element={<Nest />} />
-          <Route path="/brainSkill" element={<BrainSkill />} />
-          <Route path="/works" element={<Works />}>
-            <Route path="react" element={<ReactProject />} />
-            <Route path="fullStack" element={<FullStack />} />
-            <Route path="reactNative" element={<ReactNative />} />
-            <Route path="teamProject" element={<TeamProject />} />
-            <Route path="" element={<ReactProject />} />
-          </Route>
-        </Routes>
-        <Footer></Footer>
-      </BrowserRouter>
+    <div>
+      {loading ? (
+        <div className="flex justify-center">
+          <Dna
+            className=""
+            visible={true}
+            height="100vh"
+            width="100vh"
+            ariaLabel="dna-loading"
+            wrapperStyle={{}}
+            wrapperClass="dna-wrapper"
+            loading={loading}
+          />
+        </div>
+      ) : (
+        <div
+          className="App bg-no-repeat bg-fixed bg-cover"
+          style={{ backgroundImage: `url(${bg})` }}
+        >
+          <BrowserRouter>
+            <Navbar></Navbar>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/blogs" element={<Blogs />} />
+              <Route path="/skillsEducation" element={<SkillsEducations />} />
+              <Route path="/contacts" element={<Contacts />} />
+              <Route path="/apartmentSeller" element={<ApartmentSeller />} />
+              <Route
+                path="/travelDestination"
+                element={<TravelDestination />}
+              />
+              <Route path="/royalEnfield" element={<RoyalEnfield />} />
+              <Route path="/nest" element={<Nest />} />
+              <Route path="/brainSkill" element={<BrainSkill />} />
+              <Route path="/works" element={<Works />}>
+                <Route path="react" element={<ReactProject />} />
+                <Route path="fullStack" element={<FullStack />} />
+                <Route path="reactNative" element={<ReactNative />} />
+                <Route path="teamProject" element={<TeamProject />} />
+                <Route path="" element={<ReactProject />} />
+              </Route>
+            </Routes>
+            <Footer></Footer>
+          </BrowserRouter>
+        </div>
+      )}
     </div>
   );
 }

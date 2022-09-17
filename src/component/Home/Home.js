@@ -6,18 +6,15 @@ import linkedin from "../../asset/linkedin (1).png";
 import instagram from "../../asset/instagram.png";
 import download from "../../asset/down-arrow.png";
 import { Dna } from "react-loader-spinner";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const Home = () => {
-  <Dna
-    visible={true}
-    height="80"
-    width="80"
-    ariaLabel="dna-loading"
-    wrapperStyle={{}}
-    wrapperClass="dna-wrapper"
-  />;
+  
+  
   return (
-    <div className="flex justify-center items-center my-10 flex-col leading-8">
+    
+        <div className="flex justify-center items-center my-10 flex-col leading-8">
       <div className="flex justify-center items-center flex-col px-1 lg:mx-auto ">
         <div className="w-56 h-56 rounded-full">
           <img
